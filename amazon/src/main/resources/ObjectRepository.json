@@ -1,0 +1,52 @@
+{
+  "SignInScreen": {
+    "new_user": "id###new_user",
+    "Name1": "id###ap_customer_name",
+    "Name": "UIAutomatorSelector###resourceId(\"ap_customer_name\")",
+    "Mobile Number": "UIAutomatorSelector###resourceId(\"ap_phone_number\")",
+    "Set Password": "UIAutomatorSelector###resourceId(\"ap_password\")",
+    "Verify mobile number": "UIAutomatorSelector###text(\"Verify mobile number\")"
+  },
+  "LoginPage":{
+    "Already a member,Sign In": "UIAutomatorSelector###text(\"Already a customer? Sign In\")",
+    "email_login":"UIAutomatorSelector###resourceId(\"ap_email_login\")",
+    "password": "UIAutomatorSelector###resourceId(\"ap_password\")",
+    "Login1": "UIAutomatorSelector###text(\"Login\")",
+    "Login": "UIAutomatorSelector###resourceId(\"signInSubmit\")",
+    "Continue": "UIAutomatorSelector###text(\"Continue\")"
+  },
+  "HomeScreen":{
+    "Category1":"UIAutomatorSelector###text(\"Shop By Category\")",
+    "Category":"UIAutomatorSelector###resourceId(\"in.amazon.mShop.android.shopping:id/web_home_shop_by_department_label\")",
+    "TV, Appliances":"UIAutomatorSelector###text(\"TV, Appliances\")",
+    "Televisions":"UIAutomatorSelector###text(\"Televisions\")",
+    "Samsung 32":"UIAutomatorSelector###text(\"Samsung 32\")",
+    "Sony Bravia 801":"UIAutomatorSelector###textContains(\"Sony Bravia 80 cm (32 inches)\")",
+    "Sony Bravia 80":"xpath###//*[contains(@resource-id,\"grid-atf-content\")]//android.view.View[contains(@text,\"Sony Bravia 80\")]",
+    "Micromax 81 cm":"xpath###//*[contains(@resource-id,\"grid-atf-content\")]//android.view.View[contains(@text,\"Micromax 81 cm (32 inches) HD Ready LED TV 32T8361HD (Black) (2019 Model)\")]",
+    "Search":"UIAutomatorSelector###text(\"Search\")",
+    "Enter":"UIAutomatorSelector###text(\"Enter\")",
+    "Search in All Categories":"UIAutomatorSelector###text(\"Search in All Categories\")",
+    "Sony Bravia":"UIAutomatorSelector###textContains(\"Sony Bravia 80\")",
+    "Action Bar":"UIAutomatorSelector###resourceId(\"in.amazon.mShop.android.shopping:id/action_bar_burger_icon\")",
+    "Action Bar Home":"UIAutomatorSelector###text(\"Home\")",
+    "32 inch TVs1":"UIAutomatorSelector###text(\"32 inch TVs\")",
+    "32 inch TVs":"xpath###//android.view.View/android.view.View[@text=\"32 inch TVs\"]",
+    "View all 40 & 43 TVs":"xpath###//android.view.View/android.view.View[@text=\"View all\"]",
+    "40 & 43 inch TVs":"UIAutomatorSelector###textContains(\"40 & 43 inch TVs\")",
+    "Add to Cart1":"UIAutomatorSelector###text(\"Add to Cart\")",
+    "Add to Cart":"xpath###//*[contains(@resource-id,'add-to-cart-button') and @text='Add to Cart']",
+    "Proceed to checkout":"UIAutomatorSelector###text(\"Proceed to checkout\")"
+  },
+  "AddTocard":{
+  "PostalCode":"UIAutomatorSelector###resourceId(\"enterAddressPostalCode\")",
+  "city":"UIAutomatorSelector###resourceId(\"enterAddressCity\")",
+  "state":"UIAutomatorSelector###resourceId(\"enterAddressStateOrRegion\")",
+  "local adress":"UIAutomatorSelector###resourceId(\"enterAddressAddressLine1\")",
+  "continue":"UIAutomatorSelector###text(\"1\")",
+  "Deliver to this address":"UIAutomatorSelector###textContains(\"Deliver to this address\")",
+  "Use this address":"UIAutomatorSelector###textContains(\"Use this address\")",
+  "Search icon":"UIAutomatorSelector###resourceId(\"in.amazon.mShop.android.shopping:id/search_mag_glass\")",
+  "Search into":"UIAutomatorSelector###resourceId(\"in.amazon.mShop.android.shopping:id/search_edit_text\")"
+}
+}

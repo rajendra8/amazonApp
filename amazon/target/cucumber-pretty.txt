@@ -1,0 +1,6 @@
+@BeforeLogin @AfterLogin
+Feature: Executing the login feature
+
+  Background:                      # login.feature:4
+    Given I start the automation   # Login.iStartTheAutomation()
+    Then I executing the hookclass # Login.iExecutingTheHookclass()

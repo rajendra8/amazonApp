@@ -1,0 +1,75 @@
+2020-07-20 13:48:03:415 [Appium] Welcome to Appium v1.17.1
+2020-07-20 13:48:03:417 [Appium] Non-default server args:
+2020-07-20 13:48:03:417 [Appium]   address: 127.0.0.1
+2020-07-20 13:48:03:418 [Appium]   port: 4743
+2020-07-20 13:48:03:418 [Appium]   sessionOverride: true
+2020-07-20 13:48:03:418 [Appium]   logFile: /Users/rksahu/Desktop/AndroidBDD/amazon/./AppiumServerLogs/null/Appium_Server_Log.txt
+2020-07-20 13:48:03:418 [Appium]   loglevel: info
+2020-07-20 13:48:03:418 [Appium]   localTimezone: true
+2020-07-20 13:48:03:419 [Appium]   defaultCapabilities: {
+2020-07-20 13:48:03:419 [Appium]     noReset: false
+2020-07-20 13:48:03:419 [Appium]   }
+2020-07-20 13:48:03:419 [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2020-07-20 13:48:03:420 [Appium]   noReset: false
+2020-07-20 13:48:03:456 [Appium] Appium REST http interface listener started on 127.0.0.1:4743
+2020-07-20 13:48:03:549 [HTTP] --> GET /wd/hub/status
+2020-07-20 13:48:03:549 [HTTP] {}
+2020-07-20 13:48:03:556 [HTTP] <-- GET /wd/hub/status 200 5 ms - 68
+2020-07-20 13:48:03:556 [HTTP] 
+2020-07-20 13:48:03:560 [HTTP] --> GET /wd/hub/sessions
+2020-07-20 13:48:03:560 [HTTP] {}
+2020-07-20 13:48:03:563 [HTTP] <-- GET /wd/hub/sessions 200 2 ms - 40
+2020-07-20 13:48:03:563 [HTTP] 
+2020-07-20 13:48:04:068 [HTTP] --> POST /wd/hub/session
+2020-07-20 13:48:04:069 [HTTP] {"desiredCapabilities":{"appPackage":"in.amazon.mShop.android.shopping","noReset":"true","deviceName":"Emulator","iosInstallPause":"8000","usePrebuiltWDA":"true","appActivity":"com.amazon.mShop.home.HomeActivity","wdaStartupRetryInterval":"20000","newCommandTimeout":"3000","platformVersion":"9.0","automationName":"UiAutomator2","wdaStartupRetries":"4","platformName":"Android","udid":"emulator-5554"},"capabilities":{"firstMatch":[{"appium:appActivity":"com.amazon.mShop.home.HomeActivity","appium:appPackage":"in.amazon.mShop.android.shopping","appium:automationName":"UiAutomator2","appium:deviceName":"Emulator","appium:iosInstallPause":"8000","appium:newCommandTimeout":"3000","appium:noReset":"true","platformName":"android","appium:platformVersion":"9.0","appium:udid":"emulator-5554","appium:usePrebuiltWDA":"true","appium:wdaStartupRetries":"4","appium:wdaStartupRetryInterval":"20000"}]}}
+2020-07-20 13:48:04:075 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2020-07-20 13:48:04:338 [Appium] Appium v1.17.1 creating new AndroidUiautomator2Driver (v1.44.2) session
+2020-07-20 13:48:04:343 [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+2020-07-20 13:48:04:346 [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2020-07-20 13:48:04:347 [BaseDriver] Capability 'newCommandTimeout' changed from string ('3000') to integer (3000). This may cause unexpected behavior
+2020-07-20 13:48:04:350 [BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+2020-07-20 13:48:04:350 [BaseDriver]   iosInstallPause
+2020-07-20 13:48:04:350 [BaseDriver]   usePrebuiltWDA
+2020-07-20 13:48:04:351 [BaseDriver]   wdaStartupRetries
+2020-07-20 13:48:04:351 [BaseDriver]   wdaStartupRetryInterval
+2020-07-20 13:48:04:352 [BaseDriver] Session created with session id: c3d73329-9600-463b-8e6c-29513a6568cd
+2020-07-20 13:48:04:353 [UiAutomator2] Starting 'in.amazon.mShop.android.shopping' directly on the device
+2020-07-20 13:48:04:361 [ADB] Found 1 'build-tools' folders under '/Users/rksahu/Library/Android/sdk' (newest first):
+2020-07-20 13:48:04:361 [ADB]     /Users/rksahu/Library/Android/sdk/build-tools/28.0.3
+2020-07-20 13:48:04:361 [ADB] Using 'adb' from '/Users/rksahu/Library/Android/sdk/platform-tools/adb'
+2020-07-20 13:48:04:362 [AndroidDriver] Retrieving device list
+2020-07-20 13:48:04:377 [AndroidDriver] Using device: emulator-5554
+2020-07-20 13:48:04:378 [ADB] Using 'adb' from '/Users/rksahu/Library/Android/sdk/platform-tools/adb'
+2020-07-20 13:48:04:402 [ADB] Getting device platform version
+2020-07-20 13:48:04:420 [UiAutomator2] Relaxing hidden api policy
+2020-07-20 13:48:04:506 [AndroidDriver] No app sent in, not parsing package/activity
+2020-07-20 13:48:04:806 [ADB] Using 'apksigner.jar' from '/Users/rksahu/Library/Android/sdk/build-tools/28.0.3/lib/apksigner.jar'
+2020-07-20 13:48:05:748 [UiAutomator2] Server packages are not going to be (re)installed
+2020-07-20 13:48:05:834 [UiAutomator2] Starting UIAutomator2 server 4.5.5
+2020-07-20 13:48:05:834 [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v4.5.5.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2020-07-20 13:48:05:835 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2020-07-20 13:48:06:854 [WD Proxy] Got response with unknown status: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
+2020-07-20 13:48:07:864 [WD Proxy] Got response with unknown status: {"errno":"ECONNRESET","code":"ECONNRESET","syscall":"read"}
+2020-07-20 13:48:08:986 [WD Proxy] Determined the downstream protocol as 'W3C'
+2020-07-20 13:48:09:075 [AndroidDriver] Screen already unlocked, doing nothing
+2020-07-20 13:48:09:076 [UiAutomator2] Starting 'in.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity and waiting for 'in.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity'
+2020-07-20 13:48:11:174 [Appium] New AndroidUiautomator2Driver session created successfully, session c3d73329-9600-463b-8e6c-29513a6568cd added to master session list
+2020-07-20 13:48:11:177 [HTTP] <-- POST /wd/hub/session 200 7109 ms - 1314
+2020-07-20 13:48:11:177 [HTTP] 
+2020-07-20 13:48:11:586 [HTTP] --> POST /wd/hub/session/c3d73329-9600-463b-8e6c-29513a6568cd/timeouts
+2020-07-20 13:48:11:587 [HTTP] {"implicit":20000}
+2020-07-20 13:48:11:596 [HTTP] <-- POST /wd/hub/session/c3d73329-9600-463b-8e6c-29513a6568cd/timeouts 200 10 ms - 14
+2020-07-20 13:48:11:596 [HTTP] 
+2020-07-20 13:48:11:642 [HTTP] --> POST /wd/hub/session/c3d73329-9600-463b-8e6c-29513a6568cd/element
+2020-07-20 13:48:11:643 [HTTP] {"using":"-android uiautomator","value":"resourceId(\"in.amazon.mShop.android.shopping:id/web_home_shop_by_department_label\")"}
+2020-07-20 13:48:11:789 [HTTP] <-- POST /wd/hub/session/c3d73329-9600-463b-8e6c-29513a6568cd/element 200 147 ms - 137
+2020-07-20 13:48:11:789 [HTTP] 
+2020-07-20 13:48:11:796 [HTTP] --> GET /wd/hub/session/c3d73329-9600-463b-8e6c-29513a6568cd/element/21db03e2-7f54-41c5-a516-dd9df9c19b07/displayed
+2020-07-20 13:48:11:797 [HTTP] {}
+2020-07-20 13:48:12:312 [HTTP] <-- GET /wd/hub/session/c3d73329-9600-463b-8e6c-29513a6568cd/element/21db03e2-7f54-41c5-a516-dd9df9c19b07/displayed 200 515 ms - 14
+2020-07-20 13:48:12:312 [HTTP] 
+2020-07-20 13:48:14:507 [Appium] Received SIGINT - shutting down
+2020-07-20 13:48:14:510 [Appium] Closing session, cause was 'The process has received SIGINT signal'
+2020-07-20 13:48:14:510 [Appium] Removing session 'c3d73329-9600-463b-8e6c-29513a6568cd' from our master session list
+2020-07-20 13:48:14:513 [Logcat] Logcat terminated with code null, signal SIGINT
+2020-07-20 13:48:14:819 [UiAutomator2] Restoring hidden api policy to the device default configuration

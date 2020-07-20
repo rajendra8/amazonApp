@@ -1,0 +1,35 @@
+{
+  "ExecutionDevice": "Emulator",
+  "Commons": {
+    "platformName": "Android",
+    "appPackage":"in.amazon.mShop.android.shopping",
+    "appActivity":"com.amazon.mShop.home.HomeActivity",
+    "noReset": "true",
+    "automationName": "UiAutomator2",
+    "newCommandTimeout": "3000",
+    "wdaStartupRetries": "4",
+    "iosInstallPause": "8000",
+    "wdaStartupRetryInterval": "20000",
+    "usePrebuiltWDA": "true"
+  },
+  "iPhone7Plus": {
+    "deviceName": "iPhone7Plus",
+    "platformVersion": "11.2",
+    "udid": "02c48f502310e46d188cb8583f46641529072a4e"
+  },
+  "Simulator_11": {
+    "deviceName": "Simulator_11",
+    "platformVersion": "11.4",
+    "udid": "FBC7BD90-A16B-4958-9081-0D06A788CCBE"
+  },
+  "Redmi": {
+    "deviceName": "Redmi",
+    "platformVersion": "7.0",
+    "udid": "6c8acc897d34"
+  },
+  "Emulator": {
+    "deviceName": "Emulator",
+    "platformVersion": "9.0",
+    "udid": "emulator-5554"
+  }
+}

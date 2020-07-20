@@ -1,0 +1,722 @@
+<html>
+	<head>
+		<style type="text/css">
+h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+.none {border:0px none black;}
+table{border:1px solid black;border-collapse: collapse;}
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+        </style>
+        <title>Cucumber Steps Usage Report</title>
+    </head>
+    <body>
+    	<h1>Cucumber Usage Statistics</h1>
+    	<h2>Overview Graph</h2>
+    	<p>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+	width="500"
+    height="400">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+        	<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%" fy="100%">
+            <stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+            <stop offset="100%" style="stop-color:gold;stop-opacity:0.7" />
+        </radialGradient>
+        <linearGradient id="grad2" cx="0%" cy="100%" r="150%" fx="0%" fy="100%">
+        	<stop offset="0%" style="stop-color:red;stop-opacity:0.7" />
+            <stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+            <stop offset="100%" style="stop-color:green;stop-opacity:0.7" />
+        </linearGradient>
+    </defs>
+    <rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)" />
+		<line x1="40" y1="30" x2="40" y2="300" style="stroke:black;stroke-width:1" />
+        <line x1="40" y1="300" x2="350" y2="300" style="stroke:black;stroke-width:1" />
+        <polygon points="35,50 40,30 45,50"
+            style="fill:black;stroke:black;stroke-width:1" />
+        <polygon points="350,300 330,305 330,295"
+            style="fill:black;stroke:black;stroke-width:1" />
+        <polygon points="40,300
+        		 40,300
+        		 78.571,140
+        		 117.143,220
+        		 155.714,220
+        		 194.286,220
+        		 232.857,300
+        		 271.429,220
+        		 310,300
+        " style="stroke:black;stroke-width:1"  fill="url(#grad2)" />
+
+			<line x1="40"
+				y1="300"
+				x2="40" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="40" y="310" font-size="8">0</text>
+			<line x1="108.571"
+				y1="300"
+				x2="108.571" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="108.571" y="310" font-size="8">2</text>
+			<line x1="177.143"
+				y1="300"
+				x2="177.143" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="177.143" y="310" font-size="8">4</text>
+			<line x1="245.714"
+				y1="300"
+				x2="245.714" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="245.714" y="310" font-size="8">5</text>
+			<line x1="314.286"
+				y1="300"
+				x2="314.286" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="314.286" y="310" font-size="8">7</text>
+
+			<line x1="40" y1="300"
+				x2="35" y2="300"
+				style="stroke:black;stroke-width:1" />
+            <text x="35" y="300"
+            	transform="rotate(-90 35,300)" font-size = "8">0</text>
+			<line x1="40" y1="190"
+				x2="35" y2="190"
+				style="stroke:black;stroke-width:1" />
+            <text x="35" y="190"
+            	transform="rotate(-90 35,190)" font-size = "8">1</text>
+			<line x1="40" y1="80"
+				x2="35" y2="80"
+				style="stroke:black;stroke-width:1" />
+            <text x="35" y="80"
+            	transform="rotate(-90 35,80)" font-size = "8">3</text>
+
+
+
+
+        <line stroke-dasharray="10,10" x1="117.143" y1="30"
+        	 x2="117.143" y2="300" style="stroke:yellow;stroke-width:3" />
+        <line stroke-dasharray="10,10" x1="149.286" y1="30"
+        	 x2="149.286" y2="300" style="stroke:red;stroke-width:3" />
+        <rect x="60%" y="20%" width="28%" height="20%" stroke="black"
+             stroke-width="1" fill="white" filter="url(#f1)" />
+        <line x1="62%" y1="29%" x2="67%" y2="29%" stroke-dasharray="5,5"
+             style="stroke:red;stroke-width:3" />
+         <text x="69%" y="30%"
+             font-weight = "bold" font-size = "12">Average: 2.8</text>"
+        <line x1="62%" y1="34%" x2="67%" y2="34%" stroke-dasharray="5,5"
+        	style="stroke:yellow;stroke-width:3" /><text x="69%" y="35%"
+        	 font-weight = "bold" font-size = "12">Median: 2</text>
+        <text x="60%" y="55%" font-weight = "bold" font-size = "40" fill="#BBBB00">64.7%</text>
+        <text x="66%" y="60%" font-weight = "bold" font-size = "16" fill="#BBBB00">Re-use</text>
+        <text x="120" y="330" font-weight = "bold" font-size = "14" >Step re-use count</text>
+        <text x="20" y="220" font-weight = "bold" font-size = "14"
+         transform="rotate(-90 20,220)">Steps count</text>
+
+</svg>
+        </p>
+        <h2>Overview Table</h2>
+        <p>
+        <table>
+        	<tr>
+        		<th rowspan="2"><a id="top">#</a></th>
+        		<th rowspan="2">Expression</th>
+        		<th rowspan="2">Occurences</th>
+        		<th colspan="5">Duration</th>
+    		</tr>
+    		<tr>
+        		<th>Average</th>
+        		<th>Median</th>
+        		<th>Minimal</th>
+        		<th>Maximal</th>
+        		<th>Total</th>
+    		</tr>
+    		<tr style="background:lightgreen">
+    			<td>1</td>
+                <td width="60%"><a href="#_5EI_20wait_20for_20(_5Cd_2B)_20seconds">^I wait for (\d+) seconds</a></td><td>6</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.03s</td>
+               		<td>0.08s</td>
+            </tr>
+    		<tr style="background:lightgreen">
+    			<td>2</td>
+                <td width="60%"><a href="#_5EI_20scroll_20till_20_22(_5B_5E_22_5D*)_22_24">^I scroll till &quot;([^&quot;]*)&quot;$</a></td><td>4</td>
+               		<td>26.26s</td>
+               		<td>29.94s</td>
+               		<td>11.46s</td>
+               		<td>47.28s</td>
+               		<td>105.05s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>3</td>
+                <td width="60%"><a href="#_5EI_20wait_20until_20_22(_5B_5E_22_5D*)_22_20(appears_7Cdisappears)_24">^I wait until &quot;([^&quot;]*)&quot; (appears|disappears)$</a></td><td>3</td>
+               		<td>8.18s</td>
+               		<td>5.85s</td>
+               		<td>5.61s</td>
+               		<td>13.08s</td>
+               		<td>24.54s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>4</td>
+                <td width="60%"><a href="#_5EI_20click_20on_20_22(_5B_5E_22_5D*)_22_24">^I click on &quot;([^&quot;]*)&quot;$</a></td><td>2</td>
+               		<td>3.81s</td>
+               		<td>6.12s</td>
+               		<td>1.51s</td>
+               		<td>6.12s</td>
+               		<td>7.63s</td>
+            </tr>
+    		<tr style="background:tomato">
+    			<td>5</td>
+                <td width="60%"><a href="#_5EI_20start_20the_20automation_24">^I start the automation$</a></td><td>1</td>
+               		<td>0.17s</td>
+               		<td>0.17s</td>
+               		<td>0.17s</td>
+               		<td>0.17s</td>
+               		<td>0.17s</td>
+            </tr>
+    		<tr style="background:tomato">
+    			<td>6</td>
+                <td width="60%"><a href="#_5EI_20executing_20the_20hookclass_24">^I executing the hookclass$</a></td><td>1</td>
+               		<td>0s</td>
+               		<td>0s</td>
+               		<td>0s</td>
+               		<td>0s</td>
+               		<td>0s</td>
+            </tr>
+    	</table>
+        </p>
+        <h1>Cucumber Usage Detailed Information</h1>
+
+        	<h3><a id="_5EI_20wait_20for_20(_5Cd_2B)_20seconds">^I wait for (\d+) seconds</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="5">I wait for 20 seconds</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.033</td>
+    						<td>login.feature:36</td>
+						</tr>
+    					<tr>
+    						<td>0.007</td>
+    						<td>login.feature:45</td>
+						</tr>
+    					<tr>
+    						<td>0.006</td>
+    						<td>login.feature:47</td>
+						</tr>
+    					<tr>
+    						<td>0.008</td>
+    						<td>login.feature:49</td>
+						</tr>
+    				<tr><td rowspan="2">I wait for 10 seconds</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.02</td>
+    						<td>login.feature:39</td>
+						</tr>
+    				<tr><td rowspan="2">I wait for 5 seconds</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.006</td>
+    						<td>login.feature:42</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	180,50
+	        	180,240 
+	        	180,240
+	        	180,145
+	        	320,145
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="103"
+				 	y="48" font-weight="bold" font-size="14">4</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.01
+        	</text>
+				<text x="243"
+				 	y="143" font-weight="bold" font-size="14">2</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	0.02
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.01s</td></tr>
+		                <tr><th>Median</th><td>0.01s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>1.12</td></tr>
+		                <tr><th>Minimum</th><td>0.01s</td></tr>
+		                <tr><th>Maximum</th><td>0.03s</td></tr>
+		                <tr><th>Total</th><td>0.08s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20scroll_20till_20_22(_5B_5E_22_5D*)_22_24">^I scroll till &quot;([^&quot;]*)&quot;$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I scroll till &quot;TV, Appliances&quot;</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>11.463</td>
+    						<td>login.feature:41</td>
+						</tr>
+    				<tr><td rowspan="2">I scroll till &quot;View all&quot;</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>16.363</td>
+    						<td>login.feature:46</td>
+						</tr>
+    				<tr><td rowspan="2">I scroll till &quot;Sony Bravia 108 cm&quot;</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>29.945</td>
+    						<td>login.feature:48</td>
+						</tr>
+    				<tr><td rowspan="2">I scroll till &quot;Add to Cart&quot;</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>47.275</td>
+    						<td>login.feature:50</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>26.26s</td></tr>
+		                <tr><th>Median</th><td>29.94s</td></tr>
+		                <tr><th>Variance</th><td>193.03</td></tr>
+		                <tr><th>Skewness</th><td>0.48</td></tr>
+		                <tr><th>Minimum</th><td>11.46s</td></tr>
+		                <tr><th>Maximum</th><td>47.28s</td></tr>
+		                <tr><th>Total</th><td>105.05s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20wait_20until_20_22(_5B_5E_22_5D*)_22_20(appears_7Cdisappears)_24">^I wait until &quot;([^&quot;]*)&quot; (appears|disappears)$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I wait until &quot;Category&quot; appears</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>5.848</td>
+    						<td>login.feature:37</td>
+						</tr>
+    				<tr><td rowspan="2">I wait until &quot;TV, Appliances&quot; appears</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>13.084</td>
+    						<td>login.feature:40</td>
+						</tr>
+    				<tr><td rowspan="2">I wait until &quot;Televisions&quot; appears</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>5.613</td>
+    						<td>login.feature:43</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>8.18s</td></tr>
+		                <tr><th>Median</th><td>5.85s</td></tr>
+		                <tr><th>Variance</th><td>12.03</td></tr>
+		                <tr><th>Skewness</th><td>0.7</td></tr>
+		                <tr><th>Minimum</th><td>5.61s</td></tr>
+		                <tr><th>Maximum</th><td>13.08s</td></tr>
+		                <tr><th>Total</th><td>24.54s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20click_20on_20_22(_5B_5E_22_5D*)_22_24">^I click on &quot;([^&quot;]*)&quot;$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I click on &quot;Category&quot;</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>6.116</td>
+    						<td>login.feature:38</td>
+						</tr>
+    				<tr><td rowspan="2">I click on &quot;Televisions&quot;</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>1.509</td>
+    						<td>login.feature:44</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>3.81s</td></tr>
+		                <tr><th>Median</th><td>6.12s</td></tr>
+		                <tr><th>Variance</th><td>5.31</td></tr>
+		                <tr><th>Skewness</th><td>0</td></tr>
+		                <tr><th>Minimum</th><td>1.51s</td></tr>
+		                <tr><th>Maximum</th><td>6.12s</td></tr>
+		                <tr><th>Total</th><td>7.63s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20start_20the_20automation_24">^I start the automation$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I start the automation</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.174</td>
+    						<td>login.feature:5</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.17s</td></tr>
+		                <tr><th>Median</th><td>0.17s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0</td></tr>
+		                <tr><th>Minimum</th><td>0.17s</td></tr>
+		                <tr><th>Maximum</th><td>0.17s</td></tr>
+		                <tr><th>Total</th><td>0.17s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20executing_20the_20hookclass_24">^I executing the hookclass$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I executing the hookclass</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0</td>
+    						<td>login.feature:6</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0s</td></tr>
+		                <tr><th>Median</th><td>0s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0</td></tr>
+		                <tr><th>Minimum</th><td>0s</td></tr>
+		                <tr><th>Maximum</th><td>0s</td></tr>
+		                <tr><th>Total</th><td>0s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+
+    </body>
+</html>
